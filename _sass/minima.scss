@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #111 !default;
+$background-color: #F9F7F3 !default;
+$brand-color:      darken(#F7A072,10%) !default;
+$alt-brand:        #EDDEA4 !default;
+$alt-blue:         #B5E5FA !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  #4b8489 !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;
+
+.post-list-heading {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3, h6 {
+  margin-bottom: 5px;
+}
+
+h6 {
+  font-size: 16px;
+  color: #888;
+
+}
+
+.awards {
+  h3 {
+    margin-top: 20px;
+    margin-bottom:0px;
+  }
+
+  h4 {
+    margin-bottom: 0px;
+  }
+
+  h6 {
+    margin-bottom: 10px;
+  }
+}
+
+/* General styles for boxes */
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    // background-color: #4CAF50;
+    // color: white;
+    // padding: 20px;
+    flex: 1 1 calc(50% - 20px); /* Two columns */
+    box-sizing: border-box;
+
+    &:last-child {
+      margin-bottom: 20px;  
+    }
+    
+
+    video {
+      width: 100%;
+    }
+}
+
+/* Single column on screens smaller than 700px */
+// @media (max-width: 700px) {
+    .item {
+        flex: 1 1 100%; /* One column */
+    }
+// }
