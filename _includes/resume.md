@@ -4,9 +4,11 @@
 
 ###### Washington, D.C. | 2019 – present
 
-* Pitch and report stories, TKTK
-* Design, build TKTK cartography
-* TKTK building custom software, etc. 
+* Pitch and report stories for NPR.org, NPR's podcasts and newsmagazines.
+* Work with reporters across the newsroom to build immersive scrolly features with custom maps, graphics and visuals. 
+* Respond to global breaking news events with quick-turn analysis and maps.
+* Cultivate sources with access to high-value data, for rapid response to breaking news. 
+* Build internal software and modify open-source software to streamline cartography and graphics workflows. 
 
 ### Data Visualization Specialist, The Urban Institute
 

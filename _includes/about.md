@@ -1,9 +1,6 @@
-Hi there! 
+Daniel Wood is a graphics reporter at NPR, where he pairs in-depth reporting with custom maps, charts and visualizations. He focuses on data and imagery-rich topics like climate change, foreign conflicts and politics. His interest in tracking a small outbreak of a novel coronavirus in January 2020 helped position NPR to be among the leading news organizations to provide daily updates on the growth and impact of COVID-19 around the country and globe.
 
-I'm Dan Wood, data visualization specialist for the Urban Institute. In a prior life, I built charts and maps for Energy.gov.
+Prior to joining NPR, Wood worked for several years at the Urban Institute, building data visualizations that highlighted and publicized their research.
 
-Away from the computer, I'm a big fan of exploring the city, hiking, gardening, and writing music with my wife. When I'm not doing that, I enjoy tinkering with [math](https://bl.ocks.org/DanielJWood/ea333dfbf4ac756896c313f3c640cd6b) and [D3](http://bl.ocks.org/DanielJWood/7682223) to make some [pretty](https://danieljwood.github.io/d3-art-lines/sticks.html) [weird](https://danieljwood.github.io/d3-art-lines/lines4.html) [things](http://danieljwood.github.io/d3-examples/rect2/). 
+Wood is a native of Philadelphia. He holds a bachelor's degree from Boston University in environmental analysis and policy.
 
-A final note: The image below helped me gain a [modicum of notoriety on reddit](https://www.reddit.com/r/pics/comments/33ufn1/this_is_my_coworkers_picture_on_a_government/) a few years back, including this [amazing gif](http://i.imgur.com/FBG3d9r.gifv). It was a pretty strange experience. 
-
-This site is built using [jekyll](https://jekyllrb.com/) as a static-site generator and [Foundation](https://foundation.zurb.com/) for a responsive front-end framework. The main font is called [Central Union Mission](https://github.com/ryantroyford/central-union-mission) and it was created by [Ryan Troy Ford](http://ryantroyford.com/info.html). 

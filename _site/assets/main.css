@@ -13,8 +13,8 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #111;
-  background-color: #F9F7F3;
+  color: #efefef;
+  background-color: #212121;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -85,14 +85,14 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: rgb(244.2617449664, 127.4832214765, 65.7382550336);
+  color: #c357b9;
   text-decoration: none;
 }
 a:visited {
-  color: rgb(220.9630872483, 84.6241610738, 12.5369127517);
+  color: rgb(151.4210526316, 54.0789473684, 142.4078947368);
 }
 a:hover {
-  color: #111;
+  color: #efefef;
   text-decoration: underline;
 }
 .social-media-list a:hover {
@@ -194,7 +194,7 @@ table {
   margin-bottom: 30px;
   width: 100%;
   text-align: left;
-  color: rgb(62.9, 62.9, 62.9);
+  color: white;
   border-collapse: collapse;
   border: 1px solid #e8e8e8;
 }
@@ -217,7 +217,7 @@ table td {
  * Site header
  */
 .site-header {
-  border-top: 5px solid #4b8489;
+  border-top: 5px solid #c357b9;
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
   position: relative;
@@ -232,7 +232,7 @@ table td {
   float: left;
 }
 .site-title, .site-title:visited {
-  color: #4b8489;
+  color: #c357b9;
 }
 
 .site-nav {
@@ -246,7 +246,7 @@ table td {
   display: none;
 }
 .site-nav .page-link {
-  color: #111;
+  color: #efefef;
   line-height: 1.5;
 }
 .site-nav .page-link:not(:last-child) {
@@ -257,7 +257,7 @@ table td {
     position: absolute;
     top: 9px;
     right: 15px;
-    background-color: #F9F7F3;
+    background-color: #212121;
     border: 1px solid #e8e8e8;
     border-radius: 5px;
     text-align: right;
@@ -280,7 +280,7 @@ table td {
     text-align: center;
   }
   .site-nav .menu-icon > svg {
-    fill: #4b8489;
+    fill: #c357b9;
   }
   .site-nav input ~ .trigger {
     clear: both;
@@ -686,6 +686,62 @@ h6 {
 /* Single column on screens smaller than 700px */
 .item {
   flex: 1 1 100%; /* One column */
+}
+
+.hr {
+  position: relative;
+  float: none;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 680px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.hr hr {
+  background: linear-gradient(-158deg, #c357b9 0%, #68fcfb 100%);
+  border-radius: 5px;
+  height: 10px;
+  width: 60%;
+  border: none;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  margin: 0 auto;
+}
+
+.hr.narrow {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hr.narrow hr {
+  height: 3px;
+  width: 30%;
+}
+
+.site-header {
+  border-top: 5px solid;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(-158deg, #c357b9 0%, #68fcfb 100%) 1 1 2 1;
+  min-height: 55.95px;
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white !important;
+}
+
+#__ {
+  display: none;
+}
+
+.site-footer {
+  border-top: 5px solid;
+  border-image: linear-gradient(-158deg, #68fcfb 0%, #c357b9 100%) 1 1 2 1;
 }
 
 /*# sourceMappingURL=main.css.map */

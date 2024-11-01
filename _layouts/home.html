@@ -4,54 +4,63 @@ layout: default
 
 <div class="home">
   <div class='group-container work-all'>
-    <h2 class="post-list-heading">Work</h2>
+    <h2 id='work' class="post-list-heading">Work</h2>
     <div class='group-inner work'>
       <div class="post-list work-container">
         {% for row in site.data.work %}
-        <div class='item'>
-          <div class='date'><span class="post-meta">{{row.date}}</span></div>
-          <div class='item-inner'>
-            <div class='description'>
-              <h3><b>{{row.title}}</b></h3>
-            </div>  
-            {% if row.img contains '.mp4' %}
-              <video autoplay loop muted playsinline>
-                <source src="files/{{ row.img }}" type="video/mp4">
-              </video>
-            {% else %}
-                <img src="files/{{ row.img }}" alt="Image">
-            {% endif %}
-            
-          </div>          
-        </div>
+          {% if row.type == 'story' %}
+          <div class='item'>
+            <div class='date'><span class="post-meta">{{row.date}}</span></div>
+            <div class='item-inner'>
+              <div class='description'>
+                <h3><b>{{row.title}}</b></h3>
+              </div>  
+              {% if row.img contains '.mp4' %}
+                <a href='{{row.link}}' target="_blank"><video autoplay loop muted playsinline>
+                  <source src="files/{{ row.img }}" type="video/mp4">
+                </video></a>
+              {% else %}
+                <a href='{{row.link}}' target="_blank"><img src="files/{{ row.img }}" alt="Image"></a>
+              {% endif %}
+            </div>          
+          </div>
+          {% endif %}
         {% endfor %}
       </div>
     </div>
+    <div class="hr narrow"><hr></div>
     <div class='group-inner blogs'>
       {% capture my-include %}{% include blogs.md %}{% endcapture %}
       {{ my-include | markdownify }}
     </div>
   </div>
+  <div class="hr"><hr></div>
   <div class='group-container resume-all'>
-    <h2 class='post-list-heading'>Resume</h2>
+    <h2 id='resume' class='post-list-heading'>Resume</h2>
     <div class='group-inner resume'>
       {% capture my-include %}{% include resume.md %}{% endcapture %}
       {{ my-include | markdownify }}
     </div>
+    <div class="hr narrow"><hr></div>
     <div class='group-inner skills'>
       {% capture my-include %}{% include skills.md %}{% endcapture %}
       {{ my-include | markdownify }}
     </div>
+    <div class="hr narrow"><hr></div>
     <div class='group-inner education'>
       {% capture my-include %}{% include education.md %}{% endcapture %}
       {{ my-include | markdownify }}
     </div>
+    <div class="hr narrow"><hr></div>
     <div class='group-inner awards'>
       {% capture my-include %}{% include awards.md %}{% endcapture %}
       {{ my-include | markdownify }}
     </div>
   </div>  
-  <!-- <div class='group-container about'>
-    <h2 class='post-list-heading'>About</h2>
-  </div> -->
+  <div class="hr"><hr></div>
+  <div class='group-container about'>
+    <h2 id='about' class='post-list-heading'>About</h2>
+      {% capture my-include %}{% include about.md %}{% endcapture %}
+      {{ my-include | markdownify }}
+  </div>
 </div>
