@@ -1,0 +1,60 @@
+.print {	
+	width: 220mm;
+	background: #fff;
+	max-width: 220mm;
+	margin: 10px;
+
+	h1 {
+		font-size: 24pt;
+		margin-bottom: 1px;
+	}
+	h2 {
+		font-size: 18pt;
+		letter-spacing: 1pt;
+
+	}
+
+	h3 {
+		font-size: 14pt;
+		// letter-spacing: 0.6pt !important;
+		margin-bottom: 0px;
+	}
+
+	h6 {
+		font-size: 11pt;
+		letter-spacing: 0.2pt !important;
+		margin-bottom: 3px;
+	}	
+
+	ul {
+		line-height: 16pt !important;
+	}
+
+	li, p {
+		font-size: 11pt;
+	}
+	.header {
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
+
+
+	.icons h6 {
+		text-align: center;
+		margin-left: 10px;
+	}
+
+	color: #000;
+
+	.awards {
+
+	}
+}
+
+
+
+
+

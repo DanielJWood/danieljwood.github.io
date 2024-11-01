@@ -1,0 +1,47 @@
+---
+layout: blank
+---
+
+<style>
+	body {
+		background-color: #fff !important;
+	}
+</style>
+
+<div class="row print">
+    <div class="text-box">
+    	<div class="header">
+    		<h1>&nbsp;Daniel Wood</h1>
+	    	<div class="icons">
+	    		<h6>
+	    			215-221-2873<br>daniel.j.wood11@gmail.com
+	    		</h6>
+				<div class="clearer"></div>
+	    	</div>
+    	</div>
+		{% capture my-include %}{% include resume.md %}{% endcapture %}
+	  	{{ my-include | markdownify }}
+	  	<br>
+	  	{% capture my-include %}{% include skills.md %}{% endcapture %}
+		{{ my-include | markdownify }}
+		{% capture my-include %}{% include education.md %}{% endcapture %}
+		{{ my-include | markdownify }}
+		<h2>Select list of awards</h2>
+		<div class='awards'>
+			{% assign previous_title = nil %}
+			{% for row in site.data.awards %}
+			  {% if row.select == 'TRUE' %}
+			    {% if row.award_ceremony != previous_title %}
+			<h3> {{row['award_ceremony']}}, {{row['year']}}</h3>
+			    {% assign previous_title = row.award_ceremony %}
+			    {% endif %}
+			<h4> <b>{{ row.award_place | default: "" }}</b>{% if row.award_category and row.award_place %}, {% endif %} {{ row.award_category | default: "" }}</h4>
+			<h6><i>{{ row.story_name | default: "" }}</i></h6>
+			  {% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+        window.onload = function () { window.print(); }
+    </script>
