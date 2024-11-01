@@ -3,7 +3,7 @@
 {% assign previous_title = nil %}
 
 {% for row in site.data.awards %}
-  {% if row.include == 'TRUE' %}
+  {% if row.select == 'TRUE' %}
     {% if row.award_ceremony != previous_title %}
 
 ### {{row['award_ceremony']}}, {{row['year']}}
