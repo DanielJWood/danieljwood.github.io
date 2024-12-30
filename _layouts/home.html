@@ -17,10 +17,10 @@ layout: default
               </div>  
               {% if row.img contains '.mp4' %}
                 <a href='{{row.link}}' target="_blank"><video autoplay loop muted playsinline>
-                  <source src="files/{{ row.img }}" type="video/mp4">
-                </video></a>
+                  <source src="files/resized/{{ row.img }}" type="video/mp4">
+                </video></a> 
               {% else %}
-                <a href='{{row.link}}' target="_blank"><img src="files/{{ row.img }}" alt="Image"></a>
+                <a href='{{row.link}}' target="_blank"><img src="files/resized/{{ row.img }}" alt="Image"></a>
               {% endif %}
             </div>          
           </div>
@@ -60,7 +60,14 @@ layout: default
   <div class="hr"><hr></div>
   <div class='group-container about'>
     <h2 id='about' class='post-list-heading'>About</h2>
-      {% capture my-include %}{% include about.md %}{% endcapture %}
-      {{ my-include | markdownify }}
+      <div class='headshot'>
+        <img src="files/resized/headshot.jpg">
+        <span>Genevieve Huba</span>
+      </div>
+      <div class='bio-text'>
+        {% capture my-include %}{% include about.md %}{% endcapture %}
+        {{ my-include | markdownify }}  
+      </div>
+      <div class='clearer'></div>
   </div>
 </div>

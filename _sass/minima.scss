@@ -57,6 +57,7 @@ $on-laptop:        800px !default;
 
 .post-list-heading {
   font-size: 38px;
+  // text-align: center;
 }
 
 h2 {
@@ -182,3 +183,24 @@ a:hover {
 @import
   "resume"
 ;
+
+.headshot {
+  float: left;
+  max-width: 30%;
+
+  span {
+    font-style: italic;
+    font-size: 75%;
+    line-height: 75%;
+  }
+}
+
+.bio-text {
+  float: left;
+  max-width: calc(70% - 20px);
+  padding-left: 20px;
+}
+
+.clearer {
+  clear: both;
+}

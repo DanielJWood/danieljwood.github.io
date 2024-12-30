@@ -784,5 +784,24 @@ a:hover {
   text-align: center;
   margin-left: 10px;
 }
+.headshot {
+  float: left;
+  max-width: 30%;
+}
+.headshot span {
+  font-style: italic;
+  font-size: 75%;
+  line-height: 75%;
+}
+
+.bio-text {
+  float: left;
+  max-width: calc(70% - 20px);
+  padding-left: 20px;
+}
+
+.clearer {
+  clear: both;
+}
 
 /*# sourceMappingURL=main.css.map */

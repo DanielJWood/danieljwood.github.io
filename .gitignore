@@ -1,2 +1,12 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+files/
+!files/*.ai
+!files/*.gif
+!files/resized
+
 Gemfile.lock
 .DS_Store
