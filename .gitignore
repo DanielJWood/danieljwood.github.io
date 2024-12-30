@@ -3,10 +3,7 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 
-files/
-!files/*.ai
-!files/*.gif
-!files/resized
+
 
 Gemfile.lock
 .DS_Store
