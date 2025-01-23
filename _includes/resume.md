@@ -46,4 +46,4 @@
 
 ###### Yellowstone National Park | 2011
 
-* Research effect of climate change on pika population throughout park. 
+* Researched effect of climate change on pika population throughout park. 
