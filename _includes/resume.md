@@ -4,11 +4,14 @@
 
 ###### Washington, D.C. | 2019 – present
 
-* Pitch and report stories for NPR.org, NPR's podcasts and newsmagazines.
-* Work with reporters across the newsroom to build immersive scrolly features with custom maps, graphics and visuals. 
-* Respond to global breaking news events with quick-turn analysis and maps.
-* Cultivate sources with access to high-value data, for rapid response to breaking news. 
-* Build internal software and modify open-source software to streamline cartography and graphics workflows. 
+* Pitch and report stories for NPR.org, podcasts and newsmagazines.
+* Cover breaking news events with quick-turn analysis, charts and maps.
+* Collaborate with reporters across the newsroom to build deeply reported enterprise features with custom visuals. 
+* Edit graphics and maps and mentor early career teammates.
+* Strategize and build optimized workflows through custom software and chart and map automation.
+* Lead team's adoption of AI to improve coding efficiency. 
+* Cultivate sources with access to satellite imagery and other high-value data, for rapid response to breaking news and for deeply reported pieces. 
+* Promote NPR Graphic's brand and status through conference talks and technical blogs, to help us attract top talent.
 
 ### Data Visualization Specialist, The Urban Institute
 
@@ -39,11 +42,5 @@
 
 ###### Washington, D.C. | 2012
 
-* [Spent about a month](https://blog.mapbox.com/open-mapping-coming-to-a-campus-near-you-7e375a4dc739) tracing satellite imagery to improve OpenStreetMap data ahead of the launch of Mapbox Streets for their first big client, Foursquare. 
+* Spent about a month tracing satellite imagery to improve OpenStreetMap data ahead of the launch of Mapbox Streets for their first big client, Foursquare. 
 * Use census data to create over 800 maps showing election and demographic information for client's online campaign toolkit.
-
-### Cartographic Intern, Yellowstone Center for Resources 
-
-###### Yellowstone National Park | 2011
-
-* Researched effect of climate change on pika population throughout park. 
